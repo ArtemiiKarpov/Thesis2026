@@ -71,4 +71,5 @@ The demo is a primitive game with a player avatar moved by keyboard, capable of 
 | --- | --- | --- | --- |
 | Frequency of snapshots | CPU overhead, replay size | Student | Profile the system and determine the required frequency of full world-state snapshots utilized for divergence detection that is within acceptable performance overhead bounds. |
 | Frequency of state verification | CPU overhead, replay size | Student | Profile the system and determine the required frequency of hashes/checksums for divergence detection that is still within acceptable performance overhead bounds. |
-| Event ordering | Affects replay validity | Student | Verify that multiple inputs/events within the same frame/tick are deterministic and are always handled in the same order. |
+| Event ordering | Affects replay validity | Student | Verify that multiple inputs/events within the same frame/tick are deterministic and are always handled in the same order. | 
+| FPE handling | Affects replay validity | Student | Innacuracy or divergence from numerical operations is functionally impossible to avoid without rewriting the base libraries, so the verification and correction system must be made robust enough to account for said errors. Alternatively, explore the option of providing developers means to store FPE-prone variables in replays. |
